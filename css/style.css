@@ -1,3 +1,11 @@
+h1, h2, h3, h4, h5, li {
+    font-family: 'Text Me One', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .bckgrnd {
     background-repeat: no-repeat;
     background-position: center;
@@ -16,3 +24,76 @@
     padding-top: 125px; 
     opacity: 0.8;
 }
+
+.rentalimg { 
+    background-image: url(../img/Vik.jpg);
+    opacity: 0.8;
+    background-size: cover;
+}
+
+.ptb30px {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/*Button*/
+.fpbtn {
+    border-radius: 0px;
+    width: 200px;
+    background-color: dimgray;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.06), 0 3px 10px 0 rgba(0,0,0,0.03);
+    margin-top: 30px;
+    font-family: 'Text Me One', sans-serif;
+    margin-bottom: 30px;
+}
+
+.fpbtn:hover {
+    box-shadow: 0 -4px -8px 0 rgba(0,0,0,0.06), 0 -3px -10px 0 rgba(0,0,0,0.03);
+    background-color: darkgray;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.lokifooter {
+    background-color: ;
+    font-family: 'Raleway', sans-serif;
+    color: #425e7a;
+}
+.footerlist {
+    padding-left: 0px;
+    padding-top: 25px;
+}
+
+.footerlist>li {
+    display: inline-block;
+    padding-right: 10px;
+}
+.footerlist>li::after {
+    content: "\b7";
+    margin-left: 16px;
+    speak: none;
+}
+.footerlist>li:last-child:after {
+    display: none;
+}
+
+.footersocial:hover {
+    text-decoration: none;
+}
+   
