@@ -35,7 +35,7 @@
                         <span class="icon-bar black"></span>
                     </button>
                     <a class="navbar-brand logoheader" href="index.html" >
-                        <img src="img/logolong.png" alt="Loki Logo" class="oplogo">
+                        <img src="img/" alt="Loki Logo" class="oplogo">
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse navbar-right">
@@ -48,24 +48,52 @@
         </nav>
         <div class="container-fluid">
             <div class="row bckgrnd fp">
-                <div class="col-xs-12">
-                    <img src="img/logo.png" alt="Loki logo" class="center-block">
+                <div class="col-xs-12 text-center">
+                   <h2>We want you to have the best time.</h2>
                 </div>
             </div>
             <div class="row text-center ptb30px">
-                <div class="col-xs-12 col-sm-offset-1 col-sm-4">
-                    <img src="img/cycle.jpg" alt="cervélo cycle" class="img-responsive"> 
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="img/people/runar.jpg" class="img-responsive center-block maxheight">
+                        </div>
+                        <div class="col-xs-12 text-center">
+                            <h3>Rúnar Ólafur</h3>
+                            <h4>Owner</h4>
+                            <p>He has been in the bicycle business for almost 30 years.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-sm-offset-1 text-center">
-                    <h3>Want to experience Iceland in the best way possible?</h3>
-                    <p>We pride ourselves of having the best bicycles available for renting in Iceland, we want to give you the opportunity to experience the nature of Iceland while riding an amazing bicycle.</p>
-                    <button class="btn fpbtn" href="rentabike.html">Check out our selection</button>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="img/people/jonari.jpg" class="img-responsive center-block maxheight">
+                        </div>
+                        <div class="col-xs-12 text-center">
+                            <h3>Jón Ari</h3>
+                            <h4>Employee</h4>
+                            <p>Is born into the business and has been helping his dad in the store ever since he was a little boy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="img/people/helgi.jpg" class="img-responsive center-block maxheight">
+                        </div>
+                        <div class="col-xs-12 text-center">
+                            <h3>Helgi Berg</h3>
+                            <h4>Employee</h4>
+                            <p>Has been cycling all his life and won multiple Icelandic championships, both in mountain biking and cyclocross.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row text-center bckgrnd fp2"> 
-                <div class="col-xs-12 col-sm-4 col-sm-offset-4 text-center">
+                <div class="col-xs-12 text-center">
                     <h3>Experience the Nature</h3>
-                    <p>We pride ourselves of having the best bicycles available for renting in Iceland, we want to give you the opportunity to experience the nature of Iceland while riding an amazing bicycle.</p>
+                    <div id="map" class="center-block"></div>
                 </div>
             </div>
             
@@ -107,6 +135,25 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+        
+        <!-- Fyrir goole maps að neðan-->
+
+        <script>
+            function initMap() {
+                var uluru = {lat: 64.079576, lng:  -21.942293};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 16,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+                });
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBsZl4DWSxLLBphMdKdLPl0Mjbtk-XO0&callback=initMap">
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

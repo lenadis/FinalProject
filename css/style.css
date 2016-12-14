@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, li {
     font-family: 'Text Me One', sans-serif;
 }
 
-p {
+p, form {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -10,30 +10,53 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
     position: relative;
-    text-align: right;
 }
 .fp { 
     background-image: url(../img/rainbowroad.jpg);
     padding-top: 125px; 
     opacity: 0.8;
+    height: 500px;
 }
 .fp2 { 
     background-image: url(../img/Vik.jpg);
     padding-top: 125px; 
     opacity: 0.8;
+    height: 500px;
 }
 
 .rentalimg { 
     background-image: url(../img/Vik.jpg);
     opacity: 0.8;
-    background-size: cover;
+    
 }
 
 .ptb30px {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.pt150 {
+    padding-top: 150px;
+}
+
+.maxheight {
+    max-height: 200px;
+}
+
+.lokicheckbox {
+    width: 20px;	
+	margin: 20px auto;
+	position: relative;
+}
+
+
+
+
+
+#map {
+    width: 80%;
+    height: 300px;
+    background-color: grey;
 }
 
 
@@ -95,5 +118,11 @@ p {
 
 .footersocial:hover {
     text-decoration: none;
+}
+
+.lokift {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
    
