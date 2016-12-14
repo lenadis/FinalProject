@@ -19,6 +19,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
+        <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body class="rentalimg">
@@ -46,7 +47,7 @@
                 </div><!--/.navbar-collapse -->
             </div>
         </nav>
-        <div class="container-fluid">
+        <div class="container-fluid" id="app">
             <div class="row pt150">
                 <div class="col-xs-12">
                     <form action="" class="text-center">
@@ -55,12 +56,21 @@
                         To:
                         <input type="date" name="bday">
                         <br>
-                        <input type="checkbox" name="mountain" value="Bike" class="lokicheckbox"><label for="slideThree">Mountain Bike</label>
-                        <input type="checkbox" name="road" value="Bike"> Road Bike
-                        <input type="checkbox" name="cyclocross" value="Bike"> Cyclocross
+                        <input v-model="showM" type="checkbox" name="mountain" value="mountain" class="lokicheckbox"><label for="slideThree">Mountain Bike</label>
+                        <input v-model="showR" type="checkbox" name="road" value="road"> Road Bike
+                        <input v-model="showC" type="checkbox" name="cyclocross" value="cyclo"> Cyclocross
                     </form>
                     
                 </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-3" v-for="b in bicycles" v-show="(showM && b.mountain) || (showR && b.road) || (showC && b.cyclo)">
+                  {{ b.gears }} 
+                  <img src="{{ b.url }}">
+                  <h5 v-if="b.mountain">Mountain</h5>
+                  <h5 v-if="b.road"> Road       </h5>
+                  <h5 v-if="b.cyclo"> Cyclo     </h5>
+              </div>
             </div>
             
             <!-- FOOTER -->
