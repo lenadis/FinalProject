@@ -25,6 +25,13 @@ p, form {
     height: 500px;
 }
 
+.about { 
+    background-image: url(../img/dalur.jpg);
+    padding-top: 125px; 
+    opacity: 0.8;
+    height: 500px;
+}
+
 .rentalimg { 
     background-position: 5% 70%;
     background-attachment: fixed;
