@@ -51,28 +51,36 @@
             <div class="row pt150">
                 <div class="col-xs-12">
                     <form action="" class="text-center">
-                        From:
+                        <h3 class="inline white">From:</h3>
                         <input type="date" name="bday">
-                        To:
+                        <h3 class="inline white">To:</h3>
                         <input type="date" name="bday">
                         <br>
-                        <input v-model="showM" type="checkbox" name="mountain" value="mountain" class="lokicheckbox"><label for="slideThree">Mountain Bike</label>
-                        <input v-model="showR" type="checkbox" name="road" value="road"> Road Bike
-                        <input v-model="showC" type="checkbox" name="cyclocross" value="cyclo"> Cyclocross
+                        <label id="mountain">
+                            <input v-model="showM" type="checkbox" name="mountain" value="mountain" class="lokicheckbox">
+                            <h5 class="inline white">Mountain bike</h5>
+                        </label>
+                        <label id="road">
+                            <input v-model="showR" type="checkbox" name="road" value="road">
+                            <h5 class="inline white">Road Bike</h5>
+                        </label>
+                        <label id="cyclocross">
+                            <input v-model="showC" type="checkbox" name="cyclocross" value="cyclo"> <h5 class="inline white">Cyclocross</h5>
+                        </label>
                     </form>
                     
                 </div>
             </div>
-            <div class="row">
-              <div class="col-xs-12 col-md-3" v-for="b in bicycles" v-show="(showM && b.mountain) || (showR && b.road) || (showC && b.cyclo)">
-                  {{ b.gears }} 
-                  <img src="{{ b.url }}">
+            <div class="row mrl20px pt150 white">
+              <div class="col-xs-12 col-sm-4" v-for="b in bicycles" v-show="(showM && b.mountain) || (showR && b.road) || (showC && b.cyclo)">
+                  <img :src="b.url" class="img-responsive maxheight250">
+                  <h3>{{ b.name }}</h3>
+                  <h5>Price per day: {{ b.price }}</h5>
                   <h5 v-if="b.mountain">Mountain</h5>
-                  <h5 v-if="b.road"> Road       </h5>
-                  <h5 v-if="b.cyclo"> Cyclo     </h5>
+                  <h5 v-if="b.road"> Road</h5>
+                  <h5 v-if="b.cyclo"> Cyclocross</h5>
               </div>
             </div>
-            
             <!-- FOOTER -->
             <div class="row lokifooter lokift">
                 <div class="col-xs-12">
@@ -80,14 +88,14 @@
                         <div class="row footer">
                             <div class="col-xs-12 col-sm-4 text-center pbt15px">
                                 <a href="https://www.facebook.com/">
-                                    <img src="img/social/Facebook.png" alt="fblogo" class="plr20 footersocial">
+                                    <img src="img/fb.png" alt="fblogo" class="plr20 footersocial">
                                 </a>
                                 <a href="https://www.instagram.com/hjolasprettur">
-                                    <img src="img/social/" alt="instagram" class="plr20 footersocial">
+                                    <img src="img/insta.png" alt="instagram" class="plr20 footersocial">
                                 </a>
                             </div>
                             
-                            <div class="col-xs-12 col-sm-8">
+                            <div class="col-xs-12 col-sm-8 ">
                                 <ul class="footerlist footerlistxs text-center">
                                     <li>Loki</li>
                                     <li>contact@loki.com</li>
@@ -101,8 +109,7 @@
                     </footer>
                 </div>
             </div>
-            
-        </div>
+        </div> <!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 

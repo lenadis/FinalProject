@@ -26,9 +26,15 @@ p, form {
 }
 
 .rentalimg { 
-    background-image: url(../img/Vik.jpg);
+    background-position: 5% 70%;
+    background-attachment: fixed;
+    background-image: url(../img/mountain.jpg);
     opacity: 0.8;
     
+    
+}
+.white {
+    color: white;
 }
 
 .ptb30px {
@@ -43,13 +49,19 @@ p, form {
     max-height: 200px;
 }
 
+.maxheight250 {
+    max-height: 250px;
+}
+
 .lokicheckbox {
     width: 20px;	
 	margin: 20px auto;
 	position: relative;
 }
 
-
+.inline {
+    display: inline;
+}
 
 
 
@@ -81,15 +93,25 @@ p, form {
 
 
 
+.mrl20px {
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
+a {
+    
+    color: #526539;
+}
 
+.lokinav {
+    font-size: 1.2em;
+    padding-top: 20px;
+    padding-right: 30px;
+}
 
-
-
-
-
-
-
+.lokilogo {
+    max-height: 50px;
+}
 
 
 /*footer*/
@@ -122,7 +144,7 @@ p, form {
 
 .lokift {
     position: absolute;
-    bottom: 0;
+   
     width: 100%;
 }
    

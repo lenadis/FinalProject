@@ -5,10 +5,20 @@ var myapp = new Vue({
     showR: true,
     showC: true,
     bicycles:[
-    { gears:5, mountain:true,  road:false, cyclo:false, url:"img/bike1.png" },
-    { gears:3, mountain:true,  road:false, cyclo:false, url:"img/bike2.png" },
-    { gears:1, mountain:false, road:false, cyclo:true, url:"img/bike3.png" },
-    { gears:1, mountain:false, road:true,  cyclo:false, url:"img/bike4.png" },
+    { id:1, name:"Focus Paralane Factory Apex", price:50000,  gears:27, frame:"carbon", mountain:false,  road:false, cyclo:true, url:"img/bikes/Paralane-Factory.png" },
+        
+    { id:2, name:"Cervélo R3", price:50000, gears:27, frame:"carbon", mountain:false,  road:true, cyclo:false, url:"img/bikes/R3-ULT-Di2.jpg" },
+        
+    { id:3, name:"Cervélo R3 Disc", price:70000, gears:27, frame:"carbon", mountain:false,  road:true, cyclo:false, url:"img/bikes/R3_Disc.jpg" },
+        
+    { id:4, name:"Cervélo S2", price:50000, gears:27, frame:"carbon", mountain:false,  road:true, cyclo:false, url:"img/bikes/s2.jpg" },
+        
+    { id:5, name:"Focus Vice SL", price:50000, gears:27, frame:"carbon", mountain:true,  road:false, cyclo:false, url:"img/bikes/focusViceSL.jpg" },
+        
+    { id:6, name:"Focus Jam C Pro", price:50000, gears:27, frame:"carbon", mountain:true,  road:false, cyclo:false, url:"img/bikes/focusJamCPro.png" },
+        
+    { id:7, name:"Focus Raven LTD", price:50000, gears:27, frame:"carbon", mountain:true,  road:false, cyclo:false, url:"img/bikes/FocusRavenLTD.png" },
+        
     ],
   },
 })
