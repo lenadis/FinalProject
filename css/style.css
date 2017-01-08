@@ -98,7 +98,9 @@ p, form {
 }
 
 
-
+.black {
+    background-color: black;
+}
 
 .mrl20px {
     margin-left: 40px;

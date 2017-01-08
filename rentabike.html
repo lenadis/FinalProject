@@ -51,10 +51,16 @@
             <div class="row pt150">
                 <div class="col-xs-12">
                     <form action="" class="text-center">
-                        <h3 class="inline white">From:</h3>
-                        <input type="date" name="bday">
-                        <h3 class="inline white">To:</h3>
-                        <input type="date" name="bday">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-sm-offset-3">
+                                <h3 class="inline white">From:</h3>
+                                <input type="date" name="bday">
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <h3 class="inline white">To:</h3>
+                                <input type="date" name="bday">
+                            </div>
+                        </div>
                         <br>
                         <label id="mountain">
                             <input v-model="showM" type="checkbox" name="mountain" value="mountain" class="lokicheckbox">
@@ -87,7 +93,7 @@
                     <footer>
                         <div class="row footer">
                             <div class="col-xs-12 col-sm-4 text-center pbt15px">
-                                <a href="https://www.facebook.com/">
+                                <a href="https://www.facebook.com/hjolasprettur">
                                     <img src="img/fb.png" alt="fblogo" class="plr20 footersocial">
                                 </a>
                                 <a href="https://www.instagram.com/hjolasprettur">
